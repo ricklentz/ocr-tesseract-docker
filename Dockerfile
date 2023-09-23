@@ -1,7 +1,5 @@
-FROM ubuntu:18.04
-MAINTAINER Rick Torzynski "ricktorzynski@gmail.com"
+FROM nvcr.io/nvidia/pytorch:23.08-py3
 
-ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
   && apt-get -y install tesseract-ocr \
